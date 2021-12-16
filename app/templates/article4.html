@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width ,initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>AAA Testing</title>
+    <link rel="icon" href="Images/Python-logo.png">
+    <style>
+        .footer {
+            position: relative;
+            left: 40%;
+            width: 18%;
+            height: 20px;
+            background-color: wheat; padding: inherit;
+            color: red;
+            text-align: center;
+        }
+        body, html {
+            height: 100%;
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        .topnav{
+            overflow: hidden;
+            background-color: black;
+        }
+        .topnav a{
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 28px 65px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: darkblue ;
+            color: white;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        article {
+            font-family:"American Typewriter" ;
+            font-size: 15px;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav active">
+            <li class="nav-item">
+            </li>
+            <div class="topnav">
+                <a href="home.html">Home</a>
+                <a href="article1.html">Pylint</a>
+                <a href="article2.html">AAA Testing</a>
+                <a href="article3.html">Object Oriented Programming</a>
+                <a class="active" href="article4.html">SOLID Object Oriented Design</a>
+            </div>
+        </ul>
+    </div>
+</nav>
+
+<h3 style = "text-align: center; color: orangered" >What is SOLID Objected Oriented Design</h3>
+<article>
+    <ul>
+        The SOLID principles were first introduced by the famous Computer Scientist Robert J. Martin (a.k.a Uncle Bob) in his paper in 2000. But the SOLID acronym was introduced later by Michael Feathers.
+    </ul></article>  <div style="text-align: center;"><img height="578" width="1000px" src="Images/solid.png" alt="IMG"></div>
+<br>
+<h3 style = "text-align: center; color: orangered" >Principles of SOLID Object Oriented Design</h3>
+    <br>
+    <h3><ul>There are Five Principles of SOLID acronym follows as: <br><br>
+    1. The Single Responsibility Principle <br><br>
+        2. The Open-Closed Principle <br><br>
+        3. The Liskov Substitution Principle <br> <br>
+        4. The Interface Segregation Principle<br> <br>
+        5. The Dependency Inversion Principle <br> <br>
+    </ul></h3>
+<br>
+<ul>
+    <h5 style="font-family: 'Apple Braille'"><b> 1. The Single Responsibility Principle : </b></h5>
+    <article>
+        The Single Responsibility Principle states that a class should do one thing and therefore it should have only a single reason to change.
+
+        To state this principle more technically: Only one potential change (database logic, logging logic, and so on.) in the software’s specification should be able to affect the specification of the class.
+    </article>
+    <br>
+    <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
+    <div style="text-align: center;"><img height="" width="1000px" src="Images/principle1.png "></div>
+    <br>
+
+    <h5 style="font-family: 'Apple Braille'"><b> 2. Open-Closed Principle : </b></h5>
+    <article>
+        The Open-Closed Principle requires that classes should be open for extension and closed to modification.
+
+        Modification means changing the code of an existing class, and extension means adding new functionality.
+
+        So what this principle wants to say is: We should be able to add new functionality without touching the existing code for the class. This is because whenever we modify the existing code, we are taking the risk of creating potential bugs. So we should avoid touching the tested and reliable (mostly) production code if possible.
+
+        But how are we going to add new functionality without touching the class, you may ask. It is usually done with the help of interfaces and abstract classes.
+    </article>
+
+    <br>
+    <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
+
+    <div style="text-align: center;"><img height="320" width="1000px" src="Images/Principle2.png "></div> <br>
+    <br>
+    <h5 style="font-family: 'Apple Braille'"><b> 3. Liskov Substitution Principle: </b></h5>
+    <article>
+        The Liskov Substitution Principle states that subclasses should be substitutable for their base classes.
+
+        This means that, given that class B is a subclass of class A, we should be able to pass an object of class B to any method that expects an object of class A and the method should not give any weird output in that case.
+
+        This is the expected behavior, because when we use inheritance we assume that the child class inherits everything that the superclass has. The child class extends the behavior but never narrows it down.
+
+        Therefore, when a class does not obey this principle, it leads to some nasty bugs that are hard to detect.
+
+
+    </article>
+    <br>
+    <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
+
+    <div style="text-align: center;"><img height="440" width="1000px" src="Images/Abstraction.png"></div> <br>
+
+    <h5 style="font-family: 'Apple Braille'"><b> 4. Interface Segregation Principle :</b></h5>
+    <article>
+        Segregation means keeping things separated, and the Interface Segregation Principle is about separating the interfaces.
+
+        The principle states that many client-specific interfaces are better than one general-purpose interface. Clients should not be forced to implement a function they do no need.  </article>
+    <br>
+    <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
+
+    <div style="text-align: center;"><img height="440" width="1000px" src="Images/principle4.png"></div>
+    <br>
+    <h5 style="font-family: 'Apple Braille'"><b> 5. Dependency Inversion Principle : </b></h5>
+
+    <article>
+        The Dependency Inversion principle states that our classes should depend upon interfaces or abstract classes instead of concrete classes and functions.
+        These two principles are indeed related and we have applied this pattern before while we were discussing the Open-Closed Principle.
+
+        We want our classes to be open to extension, so we have reorganized our dependencies to depend on interfaces instead of concrete classes. Our PersistenceManager class depends on InvoicePersistence instead of the classes that implement that interface.
+    </article>
+    <br>
+    <p style="font-family: American Typewriter;text-align: center"> Adding screenshot for reference</p>
+
+    <div style="text-align: center;"><img height="144" width="1000px" src="Images/Abstraction.png"></div>
+
+</ul></article>
+
+
+<div class="footer">
+
+    <a href="https://validator.w3.org/">W3 Markup Validation service </a><br>
+    <a href="https://github.com/kn329/Project1/tree/master">GIT HUB</a>
+    <p> &copy;2021 Kartheek Nadella</p>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
